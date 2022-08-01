@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "development": "nodemon -V --ignore ./dist/ --ext js,json,ts,html,scss,css --exec 'npm run dev'",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "next": "12.2.3",
+    "nodemon": "^2.0.19",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
