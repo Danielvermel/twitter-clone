@@ -7,7 +7,9 @@
     "development": "nodemon -V --ignore ./dist/ --ext js,json,ts,html,scss,css --exec 'npm run dev'",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -21,6 +23,7 @@
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3",
     "postcss": "^8.4.14",
+    "prettier": "2.7.1",
     "tailwindcss": "^3.1.7"
   }
 }
